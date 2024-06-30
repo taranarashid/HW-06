@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+nav{
+    background-color: rgb(88, 56, 56);
+}
+.container{
+    
+    width: 1300px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.row ul li{
+     display: inline-block;
+}
+.row ul li a{
+    display: inline-block;
+    padding: 20px 10px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.row ul li a::after{
+    content:"" ;
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    background-color: #ff0202;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.row ul li a:hover::after{
+    width: 100%;
+}
+.menu-parent{
+  background-color: rgb(66, 68, 67);
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 150px;
+ 
+}
+.menu-parent li{
+    display: block;
+    width: 200px;
+}
+.menu-parent li a{
+    width: 100%;
+   
+}
+.link:hover .menu-parent{
+     opacity: 1;
+    top: 58px;
+    visibility:visible ;
+    transition: 0.7s;
+}
+.menu-parentone{
+    background-color: rgb(66, 68, 67);
+    position: absolute;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    top: 150px;
+}
+.menu-parentone li{
+    display: block;
+    width: 200px;
+}
+.menu-parentone li a{
+    width: 100%;
+   
+}
+.linkone:hover .menu-parentone{
+    opacity: 1;
+   top: 58px;
+   visibility:visible ;
+   transition: 0.7s;
+}
+.menu-parenttwo{
+    background-color: rgb(66, 68, 67);
+    position: absolute;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    top: 150px;
+}
+.menu-parenttwo li{
+    display: block;
+    width: 200px;
+}
+.menu-parenttwo li a{
+    width: 100%;
+}
+.linktwo:hover .menu-parenttwo{
+    opacity: 1;
+   top: 58px;
+   visibility:visible ;
+   transition: 0.7s;
+}
+.test{
+    background-color: rgb(2, 2, 2);
+    height: 100vh;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #218c74;;
+}
+button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: #fffefe;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+button:hover::before{
+    width: 100%;
+}
+button:hover{
+    background-color: #ff0202;
+    color: rgb(251, 251, 252);
+}
+button::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: #fffefe;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+button:hover::after{
+    width: 100%;
+}
+
+
